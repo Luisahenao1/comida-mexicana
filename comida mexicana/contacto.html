@@ -21,8 +21,55 @@
         <p>Contactanos para tener el gusto de atenderte y hacerte viajar a la ciudad de Mexico por medio de tu paladar</p>
         <!-- imagen -->
          <img width="20%" src="imagenes/contactanos.jpg" alt="portada inicio">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6514382614964!2d-75.5721994217319!3d6.309440376148994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f20381f41d9%3A0x4f05b4311dffa4d2!2sCra.%2076c%20%23112-12%20101%2C%20Maruchenga%2C%20Medell%C3%ADn%2C%20Doce%20de%20Octubre%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1738081012914!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <form style=" text-align: center; margin-top: 20px; margin-bottom:20px">
+        <label> escriba su nombre</label>
+        <input required name="NombreCliente" type="text" placeholder="Escriba en mayuscula"> <br>
+
+        <label>Celular o telefono</label>
+        <input required name="Telefono" type="tel"> <br>
+
+        <label> Edad</label>
+        <input required name="Edad" type="number" min="18" max="50"> <br>
+
+        <label>Escriba su correo</label>
+        <input required name="Correo" type="Email"> <br>
+
+        <label>Fecha de nacimiento</label>
+        <input type="date" min="1950-01-01" max="2006-12-31"> <br>
+
+        <label>Envia una foto</label>
+        <input type="file" accept=".jpg, .png, .gif" max="3MB"> <br>
+
+        <label>Genero</label>
+        <input type="radio" name="Genero" value="Hombre">Hombre
+        <input type="radio" name="Genero" value="Mujer">Mujer
+        <input type="radio" name="Genero" value="Prefiero no decirlo">Prefiero no decirlo
+        <input type="radio" name="Genero" value="No se">No se <br>
+
+        <label>Escoge tu plato:</label>
+        <input type="checkbox" name="Alambre" value="Norteño"> Alambre Norteño
+        <input type="checkbox" name="Burro" value="de Birria"> Burro de Birria
+        <input type="checkbox" name="Taco" value="Sudadero"> Taco Sudadero
+        <input type="checkbox" name="Otro" value="Otro"> Otro <br>
+
+        <label>Selecciona una opción de contacto</label>
+        <select name="contacto">
+            <option value="Correo">Correo electronico</option>
+            <option value="Rappi">Rappi</option>
+            <option value="via whatsapp">whatsapp</option>
+            <option value="Llamada">Llamada telefonica</option>
+            <option value="otros">otros</option>
+        </select> <br>
+
+        <label>Mensaje:</label>
+        <textarea name="Mensaje"></textarea> <br>
+
+
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Borrar datos</button>
+    </form>
     
 </body>
 </html>
